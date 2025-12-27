@@ -112,6 +112,7 @@ const router = createRouter({
                     name: 'documentation',
                     component: () => import('@/views/pages/Documentation.vue')
                 }
+                // NOTE: market-ledger_frontend
             ]
         },
         {
