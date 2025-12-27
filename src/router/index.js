@@ -117,12 +117,7 @@ const router = createRouter({
                 {
                     path: '/dashboard',
                     name: 'dashboard',
-                    component: () => import('@/views/pages/Dashboard.vue')
-                },
-                {
-                    path: '/dashboard',
-                    name: 'dashboard',
-                    component: () => import('@/views/pages/Dashboard.vue')
+                    component: () => import('@/views/Dashboard.vue')
                 },
                 {
                     path: '/products',

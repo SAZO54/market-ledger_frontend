@@ -4,19 +4,55 @@ import AppMenuItem from './AppMenuItem.vue';
 
 const model = ref([
     {
-        label: 'Home',
         items: [
             {
                 label: 'Dashboard',
                 icon: 'pi pi-fw pi-home',
-                to: '/'
+                to: '/dashboard'
+            },
+            {
+                label: 'Products',
+                icon: 'pi pi-fw pi-box',
+                to: '/products'
+            },
+            {
+                label: 'ProductDetail',
+                icon: 'pi pi-fw pi-tag',
+                to: '/product-detail'
+            },
+            {
+                label: 'InventoryMovements',
+                icon: 'pi pi-fw pi-arrows-h',
+                to: '/inventory-movements'
+            },
+            {
+                label: 'ListingsQueue',
+                icon: 'pi pi-fw pi-list',
+                to: '/listings-queue'
+            },
+            {
+                label: 'Orders',
+                icon: 'pi pi-fw pi-shopping-cart',
+                to: '/orders'
+            },
+            {
+                label: 'Settings',
+                icon: 'pi pi-fw pi-cog',
+                to: '/settings'
             }
         ]
     },
+
+    // UI Components
     {
         label: 'UI Components',
         path: '/uikit',
         items: [
+            {
+                label: 'DashboardSample',
+                icon: 'pi pi-fw pi-home',
+                to: '/'
+            },
             {
                 label: 'Form Layout',
                 icon: 'pi pi-fw pi-id-card',
