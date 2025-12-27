@@ -11,7 +11,7 @@ const router = createRouter({
                 {
                     path: '/',
                     name: 'dashboard',
-                    component: () => import('@/views/Dashboard.vue')
+                    component: () => import('@/views/Dashboard2.vue')
                 },
                 {
                     path: '/uikit/formlayout',
@@ -100,30 +100,71 @@ const router = createRouter({
                 {
                     path: '/pages/empty',
                     name: 'empty',
-                    component: () => import('@/views/pages/Empty.vue')
+                    component: () => import('@/views/pages/common/Empty.vue')
                 },
                 {
                     path: '/pages/crud',
                     name: 'crud',
-                    component: () => import('@/views/pages/Crud.vue')
+                    component: () => import('@/views/pages/common/Crud.vue')
                 },
                 {
                     path: '/start/documentation',
                     name: 'documentation',
-                    component: () => import('@/views/pages/Documentation.vue')
-                }
+                    component: () => import('@/views/pages/common/Documentation.vue')
+                },
+
                 // NOTE: market-ledger_frontend
+                {
+                    path: '/dashboard',
+                    name: 'dashboard',
+                    component: () => import('@/views/pages/Dashboard.vue')
+                },
+                {
+                    path: '/dashboard',
+                    name: 'dashboard',
+                    component: () => import('@/views/pages/Dashboard.vue')
+                },
+                {
+                    path: '/products',
+                    name: 'products',
+                    component: () => import('@/views/pages/ProductList.vue')
+                },
+                {
+                    path: '/product-detail',
+                    name: 'product-detail',
+                    component: () => import('@/views/pages/ProductDetail.vue')
+                },
+                {
+                    path: '/inventory-movements',
+                    name: 'inventory-movements',
+                    component: () => import('@/views/pages/InventoryMovement.vue')
+                },
+                {
+                    path: '/listings-queue',
+                    name: 'listings-queue',
+                    component: () => import('@/views/pages/ListingsQueue.vue')
+                },
+                {
+                    path: '/orders',
+                    name: 'orders',
+                    component: () => import('@/views/pages/Order.vue')
+                },
+                {
+                    path: '/settings',
+                    name: 'settings',
+                    component: () => import('@/views/pages/Setting.vue')
+                }
             ]
         },
         {
             path: '/landing',
             name: 'landing',
-            component: () => import('@/views/pages/Landing.vue')
+            component: () => import('@/views/pages/common/Landing.vue')
         },
         {
             path: '/pages/notfound',
             name: 'notfound',
-            component: () => import('@/views/pages/NotFound.vue')
+            component: () => import('@/views/pages/common/NotFound.vue')
         },
 
         {
