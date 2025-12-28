@@ -168,7 +168,6 @@ const { toggleMenu, toggleDarkMode, isDarkTheme } = useLayout();
                 <span>Market Ledger</span>
             </router-link>
         </div>
-
         <div class="layout-topbar-actions">
             <div class="layout-config-menu">
                 <button type="button" class="layout-topbar-action" @click="toggleDarkMode">
@@ -185,7 +184,6 @@ const { toggleMenu, toggleDarkMode, isDarkTheme } = useLayout();
                     <AppConfigurator />
                 </div>
             </div>
-
             <button
                 class="layout-topbar-menu-button layout-topbar-action"
                 v-styleclass="{ selector: '@next', enterFromClass: 'hidden', enterActiveClass: 'p-anchored-overlay-enter-active', leaveToClass: 'hidden', leaveActiveClass: 'p-anchored-overlay-leave-active', hideOnOutsideClick: true }"
