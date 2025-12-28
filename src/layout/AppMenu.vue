@@ -13,12 +13,7 @@ const model = ref([
             {
                 label: 'Products',
                 icon: 'pi pi-fw pi-box',
-                to: '/products'
-            },
-            {
-                label: 'ProductDetail',
-                icon: 'pi pi-fw pi-tag',
-                to: '/product-detail'
+                to: '/product'
             },
             {
                 label: 'InventoryMovements',
@@ -34,6 +29,16 @@ const model = ref([
                 label: 'Orders',
                 icon: 'pi pi-fw pi-shopping-cart',
                 to: '/orders'
+            },
+            {
+                label: 'Messages',
+                icon: 'pi pi-fw pi-comment',
+                to: '/messages'
+            },
+            {
+                label: 'Finance',
+                icon: 'pi pi-fw pi-dollar',
+                to: '/finance'
             },
             {
                 label: 'Settings',

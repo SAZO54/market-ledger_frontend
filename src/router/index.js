@@ -120,12 +120,12 @@ const router = createRouter({
                     component: () => import('@/views/Dashboard.vue')
                 },
                 {
-                    path: '/products',
+                    path: '/product',
                     name: 'products',
                     component: () => import('@/views/pages/ProductList.vue')
                 },
                 {
-                    path: '/product-detail',
+                    path: '/product/detail',
                     name: 'product-detail',
                     component: () => import('@/views/pages/ProductDetail.vue')
                 },
@@ -143,6 +143,16 @@ const router = createRouter({
                     path: '/orders',
                     name: 'orders',
                     component: () => import('@/views/pages/Order.vue')
+                },
+                {
+                    path: '/messages',
+                    name: 'messages',
+                    component: () => import('@/views/pages/Message.vue')
+                },
+                {
+                    path: '/finance',
+                    name: 'finance',
+                    component: () => import('@/views/pages/Finance.vue')
                 },
                 {
                     path: '/settings',
